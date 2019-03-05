@@ -1,0 +1,3 @@
+class BigCart < ApplicationRecord
+    
+end
