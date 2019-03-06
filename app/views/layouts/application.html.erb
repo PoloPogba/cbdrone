@@ -44,9 +44,12 @@
     <li >
      <%= link_to "Sign out", destroy_user_session_path, method: :delete %> 
     </li>
-
-
+		<% if current_user.carts[0] != nil %>
+		<li>
+		 <%= link_to "PapierPanierPiano",  user_big_cart_path( current_user.id,current_user.carts[0].big_cart_id) %> 
+</li>
       <li>
+			<%end%>
       <% @id_user = current_user.id %>
      <%= link_to "Mon Profile", user_path(@id_user) %>
     </li>

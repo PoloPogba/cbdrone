@@ -8,6 +8,8 @@ class ItemsController < ApplicationController
     def show 
         
         @id_item = Item.find(params[:id])
+        
+
          
     end
 end

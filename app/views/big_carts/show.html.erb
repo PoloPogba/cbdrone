@@ -1,0 +1,23 @@
+lolilol
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<%= current_user.email %></br>
+
+<% current_user.carts.each do |cart| %>
+<% lol = cart.item_id %>
+<% test = Item.find(lol) %>
+<%= test.title %> </br>
+<%= test.description %></br>
+<%= test.price %> $ 
+
+<% @total = @total + test.price %> </br>
+
+<%end%>
+
+
+Le montant de votre panier s'élève à : <%=@total%> $
