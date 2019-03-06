@@ -1,0 +1,12 @@
+<h1> Yeah voici nos objets du tonnerre !!!</h1>
+
+<% @items.each do |item| %>
+ Catégory:  
+<%= item.category.title %> </br>
+Titre : 
+<%= item.title %> </br>
+Description : 
+<%= item.description %></br>
+Price : 
+<%= item.price %> $ </br> 
+<%end%>
