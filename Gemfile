@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "letter_opener", :group => :development
+gem 'sendgrid-ruby'
+gem 'dotenv-rails'
 
 ruby '2.5.1'
 
