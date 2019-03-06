@@ -7,9 +7,13 @@ Titre :
 <%= item.title %> </br>
 Description :
 <%= item.description %></br>
-Price :
-<%= item.price %> $ </br>
+
+Price : 
+<%= item.price %> $ </br> 
+<%= link_to "Voir plus...", item_path(item.id)%> </br>
 <%end%>
+
+
 
 
 <!--================Home Banner Area =================-->
@@ -373,3 +377,4 @@ Price :
 		</div>
 	</section>
 	<!--================ End Subscription Area ================-->
+>>>>>>> 80564c78cf9b66bb50662d8b1721b691892be5ba
