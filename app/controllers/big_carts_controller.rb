@@ -1,0 +1,2 @@
+class BigCartsController < ApplicationController
+end

@@ -19,6 +19,16 @@
   </div>
 
   <div class="field">
+    <%= f.label :numero_telephone %><br />
+    <%= f.text_field :numero_telephone, autocomplete: "numero" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :adresse %><br />
+    <%= f.text_field :adresse, autocomplete: "adresse" %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -31,15 +41,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
-    <%= f.label :numero_telephone %><br />
-    <%= f.text_field :numero_telephone, autocomplete: "numero" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :adresse %><br />
-    <%= f.text_field :adresse, autocomplete: "adresse" %>
-  </div>
+  
 
   <div class="actions">
     <%= f.submit "Sign up" %>
