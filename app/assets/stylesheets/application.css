@@ -4127,7 +4127,7 @@ input[type=submit].btn-block {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #495057;
+    color: green;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff
 }
@@ -4145,7 +4145,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #007bff
+    background-color: green
 }
 
 .nav-fill .nav-item {
@@ -9533,7 +9533,7 @@ a.text-dark:hover {
          .header_area .navbar .nav .nav-item .nav-link:after {
            display: none; }
        .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-         color: #1641ff; }
+         color: green; }
        .header_area .navbar .nav .nav-item.submenu {
          position: relative; }
          .header_area .navbar .nav .nav-item.submenu ul {
@@ -9587,7 +9587,7 @@ a.text-dark:hover {
              .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
                border-bottom: none; }
              .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-               background: #1641ff;
+               background: green;
                color: #fff; }
          @media (min-width: 992px) {
            .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -9734,10 +9734,12 @@ a.text-dark:hover {
  /* Home Banner Area css
  ============================================================================================ */
  .home_banner_area {
-   background: url(../img/banner/banner-bg.jpg) no-repeat center bottom;
+   background: url(banner-bg.jpg) no-repeat center bottom;
    position: relative;
    z-index: 1;
-   min-height: 900px; }
+   min-height: 900px;
+
+ top:-45px}
    .home_banner_area .overlay {
      background: rgba(0, 0, 0, 0.33);
      position: absolute;
@@ -12182,12 +12184,13 @@ a.text-dark:hover {
    position: relative;
    background: #000000;
    cursor: pointer;
-   transition: all 300ms linear 0s; }
+   transition: all 300ms linear 0s;}
+
    .hot_deals_area .hot_deal_box:hover {
-     background: #1641ff; }
+     background: green; }
      .hot_deals_area .hot_deal_box:hover img {
        opacity: .2; }
-   @media (max-width: 992px) {
+   @media (max-width: 600px) {
      .hot_deals_area .hot_deal_box {
        margin-bottom: 20px; } }
    .hot_deals_area .hot_deal_box .hot_deal_box1 {
