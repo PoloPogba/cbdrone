@@ -1,6 +1,6 @@
 Coucou la correction. Bienvenue dans notre marketplace !
 
-Pas de chat ici mais d'incroyable produits dérivé de CBD.
+Pas de chat ici mais d'incroyable produits à base de CBD.
 
 ### Tu y trouveras ton bonheur pour sur.
 
