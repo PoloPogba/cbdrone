@@ -1,17 +1,5 @@
 <h1> Yeah voici nos objets du tonnerre !!!</h1>
 
-<% @items.each do |item| %>
- Catégory:
-<%= item.category.title %> </br>
-Titre :
-<%= item.title %> </br>
-Description :
-<%= item.description %></br>
-
-Price :
-<%= item.price %> $ </br>
-<%= link_to "Voir plus...", item_path(item.id)%> </br>
-<%end%>
 
 
 
@@ -44,7 +32,7 @@ Price :
 	<section class="hot_deals_area section_gap">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<div class="hot_deal_box">
 <%= image_tag("product/hot_deals/weedhd.jpg", :class => "img-fluid") %>
 
@@ -56,7 +44,7 @@ Price :
 					</div>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<div class="hot_deal_box">
 						<%= image_tag("product/hot_deals/hashhd.jpg", :class => "img-fluid") %>
 						<div class="content">
@@ -67,7 +55,7 @@ Price :
 					</div>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<div class="hot_deal_box">
 						<%= image_tag("product/hot_deals/oilhd.jpg", :class => "img-fluid") %>
 						<div class="content">
@@ -82,29 +70,7 @@ Price :
 	</section>
 	<!--================End Hot Deals Area =================-->
 
-	<!--================Clients Logo Area =================-->
-	<section class="clients_logo_area">
-		<div class="container-fluid">
-			<div class="clients_slider owl-carousel">
-				<div class="item">
-					<img src="img/clients-logo/c-logo-1.png" alt="">
-				</div>
-				<div class="item">
-					<img src="img/clients-logo/c-logo-2.png" alt="">
-				</div>
-				<div class="item">
-					<img src="img/clients-logo/c-logo-3.png" alt="">
-				</div>
-				<div class="item">
-					<img src="img/clients-logo/c-logo-4.png" alt="">
-				</div>
-				<div class="item">
-					<img src="img/clients-logo/c-logo-5.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Clients Logo Area =================-->
+
 
 	<!--================Feature Product Area =================-->
 	<section class="feature_product_area section_gap">
@@ -112,10 +78,26 @@ Price :
 			<div class="container-fluid">
 				<div class="row">
 					<div class="main_title">
-						<h2>Featured Products</h2>
+						<h2>Nos Produits</h2>
 						<p>Who are in extremely love with eco friendly system.</p>
 					</div>
 				</div>
+
+
+        <% @items.each do |item| %>
+         Catégory:
+        <%= item.category.title %> </br>
+        Titre :
+        <%= item.title %> </br>
+        Description :
+        <%= item.description %></br>
+
+        Price :
+        <%= item.price %> $ </br>
+        <%= link_to "Voir plus...", item_path(item.id)%> </br>
+        <%end%>
+
+
 				<div class="row">
 					<div class="col col1">
 						<div class="f_p_item">

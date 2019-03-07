@@ -70,10 +70,13 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html">
-            <%= image_tag("logo.png") %>
+          <div class="navbar-brand logo_h">
 
-					</a>
+          <%= link_to  root_path do %>
+<%= image_tag("logo.png") %>
+<% end %>
+
+					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -86,50 +89,40 @@
 							<div class="col-lg-7 pr-0">
 								<ul class="nav navbar-nav center_nav pull-right">
 									<li class="nav-item active">
-										<a class="nav-link" href="index.html">Home</a>
+                    <%= link_to "Accueil", root_path, :class=>"nav-link"%>
+
 									</li>
 									<li class="nav-item submenu dropdown">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+                      <%= link_to "Shop", root_path, :class=>"nav-link dropdown-toggle"%>
+
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-												<a class="nav-link" href="category.html">Shop Category</a>
-												<li class="nav-item">
-													<a class="nav-link" href="single-product.html">Product Details</a>
-													<li class="nav-item">
-														<a class="nav-link" href="checkout.html">Product Checkout</a>
-														<li class="nav-item">
-															<a class="nav-link" href="cart.html">Shopping Cart</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" href="confirmation.html">Confirmation</a>
-														</li>
+                        <%= link_to "Catégories", root_path, :class=>"nav-link"%>	</li>
+
+
+
+
+
 										</ul>
 										</li>
+
 										<li class="nav-item submenu dropdown">
-											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <%= link_to "Informations", root_path, :class=>"nav-link dropdown-toggle"%>
+
 											<ul class="dropdown-menu">
 												<li class="nav-item">
-													<a class="nav-link" href="blog.html">Blog</a>
+												<%= link_to "Qui sommes nous?", root_path, :class=>"nav-link"%>
 												</li>
-												<li class="nav-item">
-													<a class="nav-link" href="single-blog.html">Blog Details</a>
+                        <li class="nav-item">
+												<%= link_to "Le CBD", root_path, :class=>"nav-link"%>
 												</li>
 											</ul>
 										</li>
-										<li class="nav-item submenu dropdown">
-											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-											<ul class="dropdown-menu">
-												<li class="nav-item">
-													<a class="nav-link" href="login.html">Login</a>
-													<li class="nav-item">
-														<a class="nav-link" href="tracking.html">Tracking</a>
-														<li class="nav-item">
-															<a class="nav-link" href="elements.html">Elements</a>
-														</li>
-											</ul>
-											</li>
+
 											<li class="nav-item">
-												<a class="nav-link" href="contact.html">Contact</a>
+
+												<%= link_to "Nous contacter", root_path, :class=>"nav-link"%>
+
 											</li>
 								</ul>
 							</div>
@@ -263,7 +256,7 @@
 				</div>
 			</div>
 			<div class="row footer-bottom d-flex justify-content-between align-items-center">
-				<p class="col-lg-12 footer-text text-center"><!-- Link back to Colorlib can't be removed. 
+				<p class="col-lg-12 footer-text text-center">
 				</p>
 			</div>
 		</div>
