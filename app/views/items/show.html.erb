@@ -45,7 +45,7 @@ Mettre dans mon panier lol
           <div class="img_fluid" >
 
 
-                <%= @id_item.image %>
+                <%= @id_item.image_url %>
 
 
               </div>
@@ -60,7 +60,7 @@ Mettre dans mon panier lol
           <ul class="list">
             <li>
               <a class="active" href="#">
-                <span>Category</span> : <%= @id_item.category %></a>
+                <span>Category</span> : <%= @id_item.category.title %></a>
             </li>
             <li>
               <a href="#">
@@ -83,12 +83,6 @@ Mettre dans mon panier lol
           </div>
           <div class="card_area">
 
-<<<<<<< HEAD
-<%= form_tag(controller:"items", method: "create") do %>
-<%= submit_tag("Ajouter au Panier", :class => "btn btn-success") %>
-<% end %>
-
-=======
             <%= form_tag(controller:"items", method: "create") do %>
             <%= submit_tag("Ajouter au Panier", :class => "green_btn") %>
             <% end %>
@@ -105,4 +99,3 @@ Mettre dans mon panier lol
   </div>
 </div>
 <!--================End Single Product Area =================-->
->>>>>>> master
