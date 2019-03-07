@@ -9517,7 +9517,7 @@ a.text-dark:hover {
        text-align: center;
        transition: all 300ms linear 0s; }
        .header_area .navbar .icons:hover {
-         color: #1641ff;
+         color: green;
          background: #e4e4e4; }
      @media (max-width: 992px) {
        .header_area .navbar .nav {
@@ -12194,9 +12194,9 @@ a.text-dark:hover {
      .hot_deals_area .hot_deal_box {
        margin-bottom: 20px; } }
    .hot_deals_area .hot_deal_box .hot_deal_box1 {
-     background: url(../img/product/hot_deals/deal1.jpg); }
+     background: url(../images/product/hot_deals/hashhd.jpg); }
    .hot_deals_area .hot_deal_box .hot_deal_box2 {
-     background: url(../img/product/hot_deals/deal1.jpg); }
+     background: url(../images/product/hot_deals/hashhd.jpg); }
    .hot_deals_area .hot_deal_box img {
      opacity: .5; }
    .hot_deals_area .hot_deal_box .content {

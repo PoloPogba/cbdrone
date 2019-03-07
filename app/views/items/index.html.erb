@@ -8,8 +8,8 @@ Titre :
 Description :
 <%= item.description %></br>
 
-Price : 
-<%= item.price %> $ </br> 
+Price :
+<%= item.price %> $ </br>
 <%= link_to "Voir plus...", item_path(item.id)%> </br>
 <%end%>
 
@@ -44,8 +44,7 @@ Price :
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="hot_deal_box">
-
-
+<%= image_tag("product/hot_deals/weedhd.jpg", :class => "img-fluid") %>
 
 						<div class="content">
 							<h2>Fleurs de CBD</h2>
@@ -57,7 +56,7 @@ Price :
 
 				<div class="col-lg-6">
 					<div class="hot_deal_box">
-						<img class="img-fluid" src="img/product/hot_deals/hashhd.jpg" alt="">
+						<%= image_tag("product/hot_deals/hashhd.jpg", :class => "img-fluid") %>
 						<div class="content">
 							<h2>Résine de CBD</h2>
 							<p>acheter maintenant</p>
@@ -68,7 +67,7 @@ Price :
 
 				<div class="col-lg-6">
 					<div class="hot_deal_box">
-						<img class="img-fluid" src="img/product/hot_deals/oilhd.jpg" alt="">
+						<%= image_tag("product/hot_deals/oilhd.jpg", :class => "img-fluid") %>
 						<div class="content">
 							<h2>Accessoires</h2>
 							<p>acheter maintenant</p>
