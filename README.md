@@ -4,9 +4,9 @@ Pas de chat ici mais d'incroyable produits dérivé de CBD.
 
 ### Tu y trouveras ton bonheur pour sur.
 
-Détends-toi et visite notre site en [cliquant ici](https://cbdrone.herokuapp.com/) :
+Détends-toi et visite notre site en [cliquant ici](https://cbdrone.herokuapp.com/) !
 
-![https://cbdrone.herokuapp.com/](https://media.giphy.com/media/yogEmgIWxh72w/giphy.gif)
+![](https://media.giphy.com/media/yogEmgIWxh72w/giphy.gif)
 
 
 #### Made with ♥ by:
