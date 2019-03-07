@@ -19,9 +19,4 @@ WWW   WWWWW   WWW
   WWWW  |  WWWW
         |
         |
-
-------------------------------------------------
-Thank you for visiting https://asciiart.website/
-This ASCII pic can be found at
-https://asciiart.website/index.php?art=plants/marijuana
 ](https://cbdrone.herokuapp.com/)
