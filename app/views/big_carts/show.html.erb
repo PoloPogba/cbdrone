@@ -1,10 +1,4 @@
-lolilol
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
 
 <%= current_user.email %></br>
 
@@ -13,7 +7,7 @@ lolilol
 <% test = Item.find(lol) %>
 <%= test.title %> </br>
 <%= test.description %></br>
-<%= test.price %> $ 
+<%= test.price %> $
 
 <% @total = @total + test.price %> </br>
 
@@ -25,3 +19,5 @@ lolilol
 
 
 Le montant de votre panier s'élève à : <%=@total%> $
+
+  <%=link_to "payer",  new_charge_path%>

@@ -1,25 +1,20 @@
-# README
+Coucou la correction. Bienvenue dans notre marketplace !
 
-Coucou la miff
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pas de chat ici mais d'incroyable produits à base de CBD.
 
-Things you may want to cover:
+### Tu y trouveras ton bonheur pour sur.
 
-* Ruby version
+Détends-toi et visite notre site en [cliquant ici](https://cbdrone.herokuapp.com/) !
 
-* System dependencies
+![](https://media.giphy.com/media/yogEmgIWxh72w/giphy.gif)
 
-* Configuration
 
-* Database creation
+#### Made with ♥ by:
 
-* Database initialization
+##### @MisterAYS
 
-* How to run the test suite
+##### @Aleks
 
-* Services (job queues, cache servers, search engines, etc.)
+##### @Polo_M
 
-* Deployment instructions
-
-* ...
+##### @t1mar
