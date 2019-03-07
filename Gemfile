@@ -3,10 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "letter_opener", :group => :development
 gem 'sendgrid-ruby'
+
+
 gem 'dotenv-rails'
 
 ruby '2.5.1'
-
+gem 'stripe'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
