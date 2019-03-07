@@ -10,8 +10,6 @@ lolilol
 
 <% current_user.carts.each do |cart| %>
 <% lol = cart.item_id %>
-
-
 <% test = Item.find(lol) %>
 <%= test.title %> </br>
 <%= test.description %></br>
