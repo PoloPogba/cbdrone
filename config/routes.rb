@@ -3,8 +3,13 @@ devise_for :users
 
 resources :items
 root "items#index"
-resources :carts
-resources :big_carts
-resources :users
+
+
+resources :users do 
+    resources :carts  
+    resources :big_carts
+    
+    
+end
 
 end
