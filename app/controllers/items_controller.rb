@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-
+    include CreationHelper
     def index 
         @items = Item.all
     end
