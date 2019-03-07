@@ -30,11 +30,11 @@
 						<li>
 							   <% if user_signed_in? %>
     <li >
-     <%= link_to "Sign out", destroy_user_session_path, method: :delete %> 
+     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
     </li>
 		<% if current_user.carts[0] != nil %>
 		<li>
-		 <%= link_to "PapierPanierPiano",  user_big_cart_path( current_user.id,current_user.carts[0].big_cart_id) %> 
+		 <%= link_to "PapierPanierPiano",  user_big_cart_path( current_user.id,current_user.carts[0].big_cart_id) %>
 </li>
       <li>
 			<%end%>
@@ -51,7 +51,7 @@
     </li>
   <% end %>
 
-						
+
 						<li>
 							<a href="#">
 								My Account
@@ -140,7 +140,7 @@
 									<li class="nav-item">
 
 										<a href="#" class="icons">
-                        
+
 											<i class="fa fa-search" aria-hidden="true"></i>
 										</a>
 									</li>
@@ -263,9 +263,7 @@
 				</div>
 			</div>
 			<div class="row footer-bottom d-flex justify-content-between align-items-center">
-				<p class="col-lg-12 footer-text text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="col-lg-12 footer-text text-center"><!-- Link back to Colorlib can't be removed. 
 				</p>
 			</div>
 		</div>
@@ -275,23 +273,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="vendors/jquery-ui/jquery-ui.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/theme.js"></script>
+
 </body>
 
 </html>
