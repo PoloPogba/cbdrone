@@ -11,6 +11,7 @@ class UsersController < ApplicationController
       
         if @user.save
           flash[:notice] = "Successfully created User." 
+          @BigCart = BigCart.create
           redirect_to root_path
         else
           render :action => 'new'
