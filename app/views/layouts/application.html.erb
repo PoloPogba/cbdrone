@@ -41,7 +41,7 @@
       <li>
 			<%end%>
       <% @id_user = current_user.id %>
-     <%= link_to "Mon Profile", user_path(@id_user) %>
+     <%= link_to "My Account", user_path(@id_user) %>
     </li>
 
   <% else %>
@@ -54,11 +54,7 @@
   <% end %>
 
 
-						<li>
-							<a href="#">
-								My Account
-							</a>
-						</li>
+						
 						<li>
 							<a href="contact.html">
 								Contact Us

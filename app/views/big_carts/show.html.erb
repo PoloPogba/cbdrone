@@ -24,6 +24,11 @@
 
 Le montant de votre panier s'élève à : <%=@total%> $
 
-  <%=link_to "payer",  new_user_big_cart_order_path(current_user.id,current_user.numberCart)%>
+<% if @total != 0 %> 
 
+  <%=link_to "payer",  new_user_big_cart_order_path(current_user.id,current_user.numberCart)%>
+<%else%>
+
+<%= link_to "Continuer votre shopping", items_path %>
+<%end%>
 

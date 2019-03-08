@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+    devise_for :users 
 
 resources :items
 
@@ -7,7 +7,7 @@ root "items#index"
 
 
 
-resources :users do
+resources :users, only: [:show] do
     resources :carts
     resources :big_carts do 
         resources :orders
