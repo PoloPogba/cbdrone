@@ -5,11 +5,13 @@ resources :items
 
 root "items#index"
 
-resources :charges
+
 
 resources :users do
     resources :carts
-    resources :big_carts
+    resources :big_carts do 
+        resources :orders
+    end
 end
 
 

@@ -2,6 +2,9 @@ class BigCartsController < ApplicationController
 
     def show 
          @total = 0
+         @carts = Cart.all
+         @current_big_cart = Cart.where(big_cart_id: current_user.numberCart)
+          
     end
 
     def destroy

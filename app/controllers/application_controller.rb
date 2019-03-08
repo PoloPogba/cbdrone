@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
     end
     
 def create_cart
-while User.all.count > BigCart.all.count do 
+while current_user.numberCart == nil do 
     @Big = BigCart.create
-    @lol = User.last 
+    @lol = current_user
     @lol.numberCart = @Big.id
     @lol.save
    

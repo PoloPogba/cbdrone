@@ -10,22 +10,20 @@
 </br>
 <%= current_user.email %></br>
 
-<% current_user.carts.each do |cart| %>
-<% lol = cart.item_id %>
-<% test = Item.find(lol) %>
-<%= test.title %> </br>
-<%= test.description %></br>
-<%= test.price %> $
-
-<% @total = @total + test.price %> </br>
-
-<%= form_tag(user_big_cart_path( current_user.id,current_user.carts[0].big_cart_id), method: "delete") do %>
+<% @current_big_cart.each do |cart| %>
+<% mdr = Item.find(cart.item_id) %>
+<%=mdr.title%></br>
+<%=mdr.description%></br>
+<%=mdr.price%> $</br>
+<%@total = @total + mdr.price%></br>
+<%= form_tag(user_big_cart_path( current_user.id,current_user.numberCart), method: "delete") do %>
 <%= submit_tag("Retirer du Panier", :class => "btn btn-success") %>
 <%end%>
-
 <%end%>
 
 
 Le montant de votre panier s'élève à : <%=@total%> $
 
-  <%=link_to "payer",  new_charge_path%>
+  <%=link_to "payer",  new_user_big_cart_order_path(current_user.id,current_user.numberCart)%>
+
+
