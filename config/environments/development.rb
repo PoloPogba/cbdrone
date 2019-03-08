@@ -7,7 +7,7 @@ Rails.application.configure do
   config.cache_classes = false
 
 ################################ A SUPPRIMER ############################################
-config.action_mailer.delivery_method = :letter_opener
+#config.action_mailer.delivery_method = :letter_opener
 config.action_mailer.perform_deliveries = true
 ################################ A SUPPRIMER ############################################
   # Do not eager load code on boot.
