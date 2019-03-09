@@ -290,7 +290,7 @@ Devise.setup do |config|
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
   # end
-  
+  config.mailer_sender = "mail-to-send@from.com"
   # ==> Configuration for :registerable
 
   # When set to false, does not sign a user in automatically after their password is
