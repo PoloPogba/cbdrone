@@ -6,7 +6,7 @@ gem 'sendgrid-ruby'
 
 
 gem 'dotenv-rails'
-
+gem 'font-awesome-sass', '~> 4.4.0'
 ruby '2.5.1'
 gem 'stripe'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
