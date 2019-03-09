@@ -512,6 +512,7 @@ mark {
 }
 
 .img-fluid {
+    
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -12191,6 +12192,7 @@ width: 100%;
  /* Hot Deals Product Area css
  ============================================================================================ */
  .hot_deals_area .hot_deal_box {
+     
    position: relative;
    background: #000000;
    cursor: pointer;
@@ -12220,8 +12222,10 @@ width: 100%;
      transform: translate(-50%, -50%);
      color: #ffffff;
      text-align: center;
+     bottom : -130px;
      z-index: 999; }
      .hot_deals_area .hot_deal_box .content p {
+        
        text-transform: uppercase; }
    .hot_deals_area .hot_deal_box .hot_deal_link {
      position: absolute;
@@ -12230,6 +12234,54 @@ width: 100%;
      left: 0;
      right: 0;
      z-index: 1; }
+
+/*********************************************/
+     .hot_deals_area .hot_deal_boxe {
+
+        
+        position: relative;
+        background: #000000;
+        cursor: pointer;
+        transition: all 300ms linear 0s;}
+     
+        .hot_deals_area .hot_deal_boxe:hover {
+          background: green; }
+          .hot_deals_area .hot_deal_boxe:hover img {
+            opacity: .2; }
+        @media (max-width: 600px) {
+          .hot_deals_area .hot_deal_boxe {
+            margin-bottom: 20px; } }
+        .hot_deals_area .hot_deal_boxe .hot_deal_boxe1 {
+          background: url(../images/product/hot_deals/hashhd.jpg); }
+        .hot_deals_area .hot_deal_boxe .hot_deal_boxe2 {
+          background: url(../images/product/hot_deals/hashhd.jpg); }
+        .hot_deals_area .hot_deal_boxe img {
+          opacity: .5; }
+        .hot_deals_area .hot_deal_boxe .content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: #ffffff;
+          text-align: center;
+          bottom : -130px;
+          z-index: 999; }
+          .hot_deals_area .hot_deal_boxe .content p {
+             
+            text-transform: uppercase; }
+        .hot_deals_area .hot_deal_boxe .hot_deal_link {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1; }
+
+    
 
  /* Feature Product Area css
  ============================================================================================ */
