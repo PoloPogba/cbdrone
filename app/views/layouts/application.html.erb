@@ -7,7 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel='stylesheet' type='text/css'>
 
 	<!-- Required meta tags -->
@@ -20,7 +20,7 @@
 <body>
 
 	<!--================Header Menu Area =================-->
-	<header class="header_area">
+	<header class="header_area navbar_fixed">
 		<div class="top_menu row m0">
 			<div class="container-fluid">
 				<div class="float-left">
@@ -30,29 +30,7 @@
 					<ul class="right_side">
 			
 						
-							   <% if user_signed_in? %>
-
-    <li >
-     <%= link_to 'Sign out', destroy_user_session_path, :method => "delete" %>
-    </li>
-		<% if current_user.numberCart != nil %>
-		<li>
-		 <%= link_to "PapierPanierPiano",  user_big_cart_path( current_user.id,current_user.numberCart) %>
-</li>
-      <li>
-			<%end%>
-      <% @id_user = current_user.id %>
-     <%= link_to "My Account", user_path(@id_user) %>
-    </li>
-
-  <% else %>
-  <li>
-      <%= link_to "Sign in", new_user_session_path %>
-    </li>
-    <li>
-     <%= link_to "Sign up", new_user_registration_path %>
-    </li>
-  <% end %>
+	
 
 
 						
@@ -96,7 +74,11 @@
 
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-                        <%= link_to "Catégories", root_path, :class=>"nav-link"%>	</li>
+                        <%= link_to "Nos fleurs", category_path(1), :class=>"nav-link"%>	</li>
+												<li class="nav-item">
+                        <%= link_to "Nos résines", category_path(2), :class=>"nav-link"%>	</li>
+												<li class="nav-item">
+                        <%= link_to "Nos accessoires", category_path(3), :class=>"nav-link"%>	</li>
 
 
 
@@ -139,12 +121,40 @@
 
 									<hr>
 
-									<li class="nav-item">
+
+									<li class="nav-item submenu dropdown">
 										<a href="#" class="icons">
 											<i class="fa fa-user" aria-hidden="true"></i>
 										</a>
-									</li>
+										<ul class="dropdown-menu">
+										
+										<% if user_signed_in? %>
+										<% @id_user = current_user.id %>
+												
+												<li class="nav-item">
+												<%= link_to "Mon profile", user_path(@id_user), :class=>"nav-link" %>
+												</li>
 
+                        <li class="nav-item">
+												<%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete" , :class=>"nav-link"%>
+												</li>
+
+										<% else %>
+
+												<li class="nav-item">
+												<%= link_to "Connexion", new_user_session_path, :class=>"nav-link" %>
+												</li>
+
+                        <li class="nav-item">
+												<%= link_to "Inscription", new_user_registration_path, :class=>"nav-link" %>
+												</li>
+
+										<%end%>
+
+											</ul>
+
+
+									</li>
 									<hr>
 
 									<li class="nav-item">
@@ -157,7 +167,7 @@
 
 									<li class="nav-item">
 										<a href="#" class="icons">
-											<i class="lnr lnr lnr-cart"></i>
+											<i class="fa fa-shopping-cart"></i>
 										</a>
 									</li>
 
@@ -268,5 +278,6 @@
 
 
 </body>
+
 
 </html>
