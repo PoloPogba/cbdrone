@@ -69,7 +69,7 @@ items = Item.create!([
     title: "Népalais",
     description: "T'inquiète pas ma frèr c'est du compressé",
     price: 19.99,
-    image_url: "SHC-6.jpg",
+    image_url: "shc-6.jpg",
     category_id: 2
   },
   {
