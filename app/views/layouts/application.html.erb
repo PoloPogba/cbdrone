@@ -102,7 +102,7 @@
 
 											<li class="nav-item">
 
-												<%= link_to "Nous contacter", root_path, :class=>"nav-link"%>
+												<%= link_to "Nous contacter", contact_path, :class=>"nav-link"%>
 
 											</li>
 								</ul>
@@ -165,11 +165,27 @@
 
 									<hr>
 
-									<li class="nav-item">
+							
+
+									<li class="nav-item"> 
+									<% if user_signed_in? %>
+									<% if current_user.numberCart != nil %>
+									<%= link_to  user_big_cart_path(current_user.id, current_user.numberCart) do %>
+  									<i class="fa fa-shopping-cart"></i>
+										<%end%>
+										<%else%>
 										<a href="#" class="icons">
 											<i class="fa fa-shopping-cart"></i>
 										</a>
+									<% end %>
+									<%else%> 
+									<a href="#" class="icons">
+											<i class="fa fa-shopping-cart"></i>
+										</a>
+									<%end%>
+									
 									</li>
+
 
 									<hr>
 								</ul>
@@ -184,6 +200,8 @@
 	
 
 	<%= yield %>
+
+	
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">

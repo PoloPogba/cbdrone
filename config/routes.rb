@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
     devise_for :users 
 
-
-resources :items 
-    resources :categories
-
 root "items#index"
+resources :items 
+resources :categories
 
+
+get '/contact', to: 'staticpages#contact'
+get '/mentions-legales', to: 'staticpages#mentions'
+get '/conditions-générales-ventes', to: 'staticpages#conditions'
 
 
 resources :users, only: [:show] do

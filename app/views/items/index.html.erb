@@ -28,7 +28,42 @@
 		</div>
 	</section>
 	<!--================End Home Banner Area =================-->
+<div id="fh5co-services" class="fh5co-bg-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 text-center">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <div class="p_icon">
+            <i class="fa fa-lock"></i>
+          </div>
+          <h3>Safe payement</h3>
+          <p>We only accept Visa, Mastercard, American Express and PayPal.</p>
 
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 text-center">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <span class="icon">
+            <i class="fa fa-truck"></i>
+          </span>
+          <h3>Authenticity</h3>
+          <p>Our products are authenticated by our team in Paris.</p>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 text-center">
+        <div class="feature-center animate-box" data-animate-effect="fadeIn">
+          <span class="icon">
+            <i class="fas fa-shipping-fast"></i>
+          </span>
+          <h3>Worldwide Delivery</h3>
+          <p>Your order will be shipped with FedEx the day after you placed it. Allow 3 to 5 business days for shipping.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 	<!--================Hot Deals Area =================-->
 	<section class="hot_deals_area section_gap">
 		<div class="container-fluid">
@@ -103,12 +138,25 @@
 								<%= image_tag(item.image_url) %>
 								
 								<div class="p_icon">
-									<a href="#">
-										<i class="fa fa-eye"></i>
-									</a>
-									<a href="#">
-										<i class="fa fa-shopping-cart"></i>
-									</a>
+									
+									<%= link_to item_path(item.id) do %>
+  									<i class="fa fa-eye"></i>
+									<% end %>
+
+									<%= link_to item_path(item.id) do %>
+  									<i class="fa fa-shopping-cart"></i>
+									<% end %>
+									
+					
+
+			  	
+
+
+            						
+									
+     
+
+							
 								</div>
 							</div>
 							
@@ -155,14 +203,22 @@
 							 required="">
 							<!-- <div style="position: absolute; left: -5000px;">
 								<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-							</div> -->
-							<button type="submit" class="newsl-btn">Get Started</button>
+							</div> --> 
+							
+							
+							
 							<div class="info"></div>
 						</form>
 					</div>
 				</div>
+				<div class="upandown">
+			<button type="submit" class="green_btn" style="float: right">Get Started</button>
 			</div>
+			</div>
+			
 		</div>
+		
 	</section>
+	
 	<!--================ End Subscription Area ================-->
 

@@ -12184,6 +12184,7 @@ width: 100%;
    .green_btn:hover {
      background-position: right center;
      color: #fff; }
+    
 
  /* End Main Button Area css
  ============================================================================================ */
@@ -13647,6 +13648,10 @@ width: 100%;
  /*---------------------------------------------------- */
  /*----------------------------------------------------*/
  /*============== footer-area css ===============*/
+ footer {
+     background-color: #4e574f7a;
+    /*or #b3beb57a its kinda good yeah */
+ }
  .single-footer-widget p {
    margin-bottom: 0px;
    color: #777777;
