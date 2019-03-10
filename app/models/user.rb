@@ -9,8 +9,8 @@ end
 
 
 # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable, :trackable,
+  #  :lockable, :timeoutable, :omniauthable
+  devise :database_authenticatable, :registerable, :trackable, :confirmable,
          :recoverable, :rememberable, :validatable
 
          has_many :orders
