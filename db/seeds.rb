@@ -60,7 +60,7 @@ items = Item.create!([
   },
   {
     title: "Afghan",
-    description: " La meilleure résine disponible sur le marché. N'attendez plus !'Oser la qualité' ",
+    description: " La meilleure résine disponible sur le marché. N'attendez plus !'Osez la qualité' ",
     price: 21.99,
     image_url: "hashhd.jpg",
     category_id: 2
